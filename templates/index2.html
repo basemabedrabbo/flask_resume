@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<h4> Pizza topping choices are: </h4> 
+{{ toppings }}
+</br></br>
+<b> {{ f_name }} </b> had orderd pizza with the following topping:  <b>{{ choice }}</b>
+</br>
+<ul>
+{% for topping in toppings %}
+	<li> {{ topping }} </li>
+{% endfor %}
+</ul>
+
+<!--<a href="/about">About our company</a>-->
+<!--<a href="{{ url_for('about') }}">About me and my company</a> -->
+<br/><br/>
+
+{% endblock %}
+
+			
+	
+	
+	
+
